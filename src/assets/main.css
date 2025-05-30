@@ -1,0 +1,167 @@
+
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto; 
+    padding: 20px;
+    box-sizing: border-box;
+    background-color:  #fff9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  }
+  h2{
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  /* Навигационное меню */
+  nav {
+    background-color: #333; 
+    padding: 15px 0;
+    text-align: center;
+  }
+  
+  nav a {
+    color:  #fff9f9;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  nav a:hover{
+    background-color: #555;
+  }
+  
+  nav a.router-link-exact-active {
+      background-color: #c369c9;
+  }
+  
+  /* Формы */
+  form {
+      width: 50%;
+      margin: 0 auto;
+  }
+  form > div {
+      margin: 10px 0;
+  }
+  form label {
+      display: block;
+      margin-bottom: 5px;
+  }
+  form input, form textarea{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #868686;
+    border-radius: 4px;
+      resize: vertical; 
+  }
+  
+  form button{
+      background-color: #c369c9;
+      color: #fff9f9;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+  
+  form button:hover{
+      background-color: #c369c9;
+  }
+  
+  
+  /* Список задач */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #c3b3b3;
+      flex-wrap: wrap;
+  }
+  li > span {
+    cursor: pointer;
+    flex: 1 1 auto; 
+    word-break: break-word;
+    padding-right: 10px; 
+  }
+  
+  li button {
+      background-color: #d9534f;
+      color:#fff9f9;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+  
+  li button:hover {
+      background-color: #bc2e29; /*чутка потемнее*/
+  }
+  
+  /* Ссылки */
+  
+  a {
+    color: #337ab7;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Стили для деталей */
+  .todo-details {
+      margin: 20px auto;
+      width: 70%;
+      padding: 20px;
+  }
+  .todo-details > h3{
+    margin: 0;
+  }
+  .todo-details p{
+    white-space: pre-line;
+    margin-top:10px;
+  }
+  
+  /* Стили для главной страницы */
+  .home-page {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  
+  }
+  .home-page h1{
+      margin-bottom: 20px;
+  }
+  .home-page img{
+    max-width: 100%;
+  }
+  
+  /* Стили для выполненых задач */
+  .completed{
+    text-decoration: line-through;
+    color: #999;
+  }
+  /* отступы */
+  .action-link{
+      margin-right: 10px;
+  }
